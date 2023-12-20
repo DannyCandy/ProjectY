@@ -14,7 +14,6 @@ namespace hardware_prediction_expert_system
         {
             // Chọn TabPage1 là mặc định
             FormDescription fd = new FormDescription();
-            
             fd.TopLevel = false;
             fd.FormBorderStyle = FormBorderStyle.None;
             fd.WindowState = FormWindowState.Maximized;

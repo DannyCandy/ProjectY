@@ -1,7 +1,9 @@
-﻿using System;
+﻿using ComponentFactory.Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace hardware_prediction_expert_system
@@ -48,7 +50,7 @@ namespace hardware_prediction_expert_system
             description.Add("hdd", "Lỗi hỏng hóc từ dữ liệu");
         }
 
-        //Xây dựng luật
+        //Xây dựng luật 
         private void buildBaseRule()
         {
             // Add rules
@@ -221,9 +223,20 @@ namespace hardware_prediction_expert_system
                         Match match = regex.Match(reason);
                         if (match.Success)
                         {
+                            string history = "Power_Led: " + power_led_cbb.Text + "\n" 
+                                            + "Monitor_Signal_Cable: " + monitor_signal_cable_cbb.Text+ "\n" 
+                                            + "Monitor: " + monitor_cbb.Text + "\n" 
+                                            + "Monitor_Control_Button: " + monitor_control_button_cbb.Text + "\n" 
+                                            + "Power_Fan: " + power_fan_cbb.Text + "\n" 
+                                            + "Hdd_Cable: " + hdd_cab_cbb.Text + "\n" 
+                                            + "Os: " + os_cbb.Text + "\n" 
+                                            + "Hdd: " + hdd_cbb.Text + "\n" 
+                                            + "Power_Cable: " + power_cable_cbb.Text + "\n" 
+                                            + "Bip_Description: " + bip_des_cbb.Text
+                                            + "\n" + "=> ";
                             string errorDevice = match.Groups[1].Value;
                             //Sau khi lấy được X thì làm key tìm trong dictionary để thông báo lỗi
-                            MessageBox.Show(description[errorDevice]+": "+errorDevice, "Kết quả chẩn đoán!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(history + description[errorDevice] + ": " + errorDevice, "Kết quả chẩn đoán!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     else
@@ -233,7 +246,7 @@ namespace hardware_prediction_expert_system
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi hệ thống!\r\n"+ex, "Opps ...", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Lỗi hệ thống!\r\n" + ex, "Opps ...", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

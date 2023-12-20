@@ -40,8 +40,6 @@
             this.power_fan_cbb = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.monitor_control_button_cbb = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.monitor_cbb = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.monitor_signal_cable_cbb = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.power_led_cbb = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.bip_description_lb = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
             this.power_cable_lb = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
             this.hdd_lb = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
@@ -52,6 +50,8 @@
             this.monitor_lb = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
             this.monitor_signal_cable_lb = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
             this.power_led_lb = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
+            this.power_led_cbb = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.monitor_signal_cable_cbb = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.mainPanel)).BeginInit();
             this.mainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bip_des_cbb)).BeginInit();
@@ -62,8 +62,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.power_fan_cbb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.monitor_control_button_cbb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.monitor_cbb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.monitor_signal_cable_cbb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.power_led_cbb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monitor_signal_cable_cbb)).BeginInit();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -77,10 +77,10 @@
             this.mainPanel.Controls.Add(this.os_cbb);
             this.mainPanel.Controls.Add(this.hdd_cab_cbb);
             this.mainPanel.Controls.Add(this.power_fan_cbb);
-            this.mainPanel.Controls.Add(this.monitor_control_button_cbb);
-            this.mainPanel.Controls.Add(this.monitor_cbb);
             this.mainPanel.Controls.Add(this.monitor_signal_cable_cbb);
+            this.mainPanel.Controls.Add(this.monitor_control_button_cbb);
             this.mainPanel.Controls.Add(this.power_led_cbb);
+            this.mainPanel.Controls.Add(this.monitor_cbb);
             this.mainPanel.Controls.Add(this.bip_description_lb);
             this.mainPanel.Controls.Add(this.power_cable_lb);
             this.mainPanel.Controls.Add(this.hdd_lb);
@@ -264,38 +264,6 @@
             this.monitor_cbb.Size = new System.Drawing.Size(168, 25);
             this.monitor_cbb.TabIndex = 2;
             // 
-            // monitor_signal_cable_cbb
-            // 
-            this.monitor_signal_cable_cbb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.monitor_signal_cable_cbb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.monitor_signal_cable_cbb.DropDownWidth = 168;
-            this.monitor_signal_cable_cbb.Items.AddRange(new object[] {
-            "Not tight",
-            "Tight"});
-            this.monitor_signal_cable_cbb.Location = new System.Drawing.Point(669, 101);
-            this.monitor_signal_cable_cbb.Name = "monitor_signal_cable_cbb";
-            this.monitor_signal_cable_cbb.Size = new System.Drawing.Size(168, 25);
-            this.monitor_signal_cable_cbb.TabIndex = 6;
-            this.monitor_signal_cable_cbb.Text = "Not tight";
-            // 
-            // power_led_cbb
-            // 
-            this.power_led_cbb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.power_led_cbb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.power_led_cbb.DropDownWidth = 168;
-            this.power_led_cbb.Items.AddRange(new object[] {
-            "Off",
-            "On"});
-            this.power_led_cbb.Location = new System.Drawing.Point(243, 101);
-            this.power_led_cbb.Name = "power_led_cbb";
-            this.power_led_cbb.Size = new System.Drawing.Size(168, 25);
-            this.power_led_cbb.TabIndex = 1;
-            this.power_led_cbb.Text = "Off";
-            // 
             // bip_description_lb
             // 
             this.bip_description_lb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -416,6 +384,36 @@
             this.power_led_lb.Size = new System.Drawing.Size(79, 20);
             this.power_led_lb.Text = "Power_Led";
             // 
+            // power_led_cbb
+            // 
+            this.power_led_cbb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.power_led_cbb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.power_led_cbb.DropDownWidth = 168;
+            this.power_led_cbb.Items.AddRange(new object[] {
+            "Off",
+            "On"});
+            this.power_led_cbb.Location = new System.Drawing.Point(243, 101);
+            this.power_led_cbb.Name = "power_led_cbb";
+            this.power_led_cbb.Size = new System.Drawing.Size(168, 25);
+            this.power_led_cbb.TabIndex = 2;
+            // 
+            // monitor_signal_cable_cbb
+            // 
+            this.monitor_signal_cable_cbb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.monitor_signal_cable_cbb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.monitor_signal_cable_cbb.DropDownWidth = 168;
+            this.monitor_signal_cable_cbb.Items.AddRange(new object[] {
+            "Not right",
+            "Right"});
+            this.monitor_signal_cable_cbb.Location = new System.Drawing.Point(669, 101);
+            this.monitor_signal_cable_cbb.Name = "monitor_signal_cable_cbb";
+            this.monitor_signal_cable_cbb.Size = new System.Drawing.Size(168, 25);
+            this.monitor_signal_cable_cbb.TabIndex = 7;
+            // 
             // FormDescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -437,8 +435,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.power_fan_cbb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.monitor_control_button_cbb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.monitor_cbb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.monitor_signal_cable_cbb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.power_led_cbb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monitor_signal_cable_cbb)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -456,8 +454,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox power_fan_cbb;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox monitor_control_button_cbb;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox monitor_cbb;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox monitor_signal_cable_cbb;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox power_led_cbb;
         private ComponentFactory.Krypton.Toolkit.KryptonWrapLabel bip_description_lb;
         private ComponentFactory.Krypton.Toolkit.KryptonWrapLabel power_cable_lb;
         private ComponentFactory.Krypton.Toolkit.KryptonWrapLabel hdd_lb;
@@ -469,5 +465,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonWrapLabel monitor_signal_cable_lb;
         private ComponentFactory.Krypton.Toolkit.KryptonWrapLabel power_led_lb;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox power_cable_cbb;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox power_led_cbb;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox monitor_signal_cable_cbb;
     }
 }

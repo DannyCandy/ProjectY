@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HPES));
             this.Tab1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.Tab1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Tab1
@@ -56,6 +59,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.richTextBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -63,6 +67,15 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Rules";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(968, 518);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // HPES
             // 
@@ -74,6 +87,7 @@
             this.Text = "HPES";
             this.Load += new System.EventHandler(this.HPES_Load);
             this.Tab1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -83,6 +97,7 @@
         private System.Windows.Forms.TabControl Tab1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

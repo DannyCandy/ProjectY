@@ -117,4 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Các luật dùng để xác định nhóm hỏng hóc: 
+	!ON(power_led) ^ !ON(monitor) ^ !RUN(power_fan) → GROUP (power_broble)
+	ON(power_led) ^ !ON(monitor) ^ BIP(1) → GROUP(monitor_broblem) 
+	ON(power_led) ^ !ON(monitor) ^ !BIP (1) → GROUP(processor_broblem) 
+	ON(monitor) BIP(1)∧LOAD(os) → GROUP(os_broblem) 
+Các luật dùng để chẩn đoán cho hỏng hóc từ nguồn điện: 
+	GROUP(power_broblem) ^ TIGHT(power_cable) → REASON(power) 
+	GROUP(power_broblem) ^ !TIGHT(power_cable) → REASON(power_cable) 
+Các luật cho hỏng hóc liên quan đến màn hình máy tính: 
+	GROUP(monitor_problem) ^  !TIGHT(monitor_signal_cable) → REASON(monitor_signal_cable) 
+	GROUP(monitor_problem) ^ TIGHT (monitor_signal_cable) → REASON(monitor_control_bnt) 
+	GROUP(monitor_problem) ^ TIGHT(monitor_signal_cable) ^  RIGHT(monitor_control_bnt) → REASON(monitor) 
+Các luật cho hỏng hóc từ các đơn vị xử lý: 
+	GROUP(processor_problem) ^ BIP(1_1_3) → REASON(cmos) 
+	GROUP(processor_problem) ^ BIP(1_1_4) → REASON(bios) 
+	GROUP(processor_problem) ^ BIP(1_2_1) → REASON(mainboard_clock_chip) 
+	GROUP(processor_problem) ^ BIP(1_3_1) → REASON(mainboard) 
+	GROUP(processor_problem) ^ BIP(1_4_2) → REASON(ram_slot)
+	GROUP(processor_problem) ^ BIP(2_0_0) → REASON(ram) 
+	GROUP(processor_problem) ^ BIP(3_2_4) → REASON(keyboard_test_chip)
+	GROUP(processor_problem) ^ BIP(3_3_4) → REASON(vga_card_slot)
+	GROUP(processor_problem) ^ BIP(3_4_0) → REASON(vga_card) 
+	GROUP(processor_problem) ^ BIP(4_2_4) → REASON(card_on_mainboard) 
+	GROUP(processor_problem) ^ BIP(4_3_4) → REASON(cmos_battery) 
+	GROUP(processor_problem) ^ BIP(4_4_1) → REASON(serial_port) 
+	GROUP(processor_problem) ^ BIP(4_4_2) → REASON(paralel_port) 
+	GROUP(processor_problem) ^ BIP(4_4_3) REASON(cpu) 
+Các luật cho hỏng hóc từ đĩa cứng và dữ liệu: 
+	GROUP(os_problem) ^ BAD_MSG(hdd) ^ TIGHT(hdd_cab) → REASON(hdd) 
+	GROUP(os_problem) ^ BAD_MSG(hdd) ^ !TIGHT(hdd_cab)→ REASON(hdd_cab)
+	GROUP(os_problem) ^ !BAD_MSG(hdd) → REASON(os)</value>
+  </data>
 </root>

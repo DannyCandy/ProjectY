@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FormHistory
+            // FormRules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 471);
-            this.Name = "FormHistory";
-            this.Text = "FormHistory";
+            this.ClientSize = new System.Drawing.Size(950, 520);
+            this.Name = "FormRules";
+            this.Text = "RulesHistory";
             this.ResumeLayout(false);
 
         }
