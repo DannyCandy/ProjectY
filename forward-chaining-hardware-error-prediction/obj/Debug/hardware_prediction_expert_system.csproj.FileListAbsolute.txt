@@ -36,13 +36,10 @@ C:\Users\Admin\OneDrive\Desktop\CODE\.NetWinForm\hardware_prediction_expert_syst
 C:\Users\Admin\OneDrive\Desktop\CODE\.NetWinForm\hardware_prediction_expert_system-Suy-dien-tien\bin\Debug\FormApp.Designer.cs
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\FormApp.resx
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\FormDescription.resx
-C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\FormRules.resx
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\FormApp.cs
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\FormApp.Designer.cs
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\FormDescription.cs
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\FormDescription.Designer.cs
-C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\FormRules.cs
-C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\FormRules.Designer.cs
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\Program.cs
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\App.config
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\bin\Debug\hardware_prediction_expert_system.exe.config
@@ -57,11 +54,9 @@ C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-pr
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\obj\Debug\hardware_prediction_expert_system.csproj.AssemblyReference.cache
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\obj\Debug\hardware_prediction_expert_system.HPES.resources
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\obj\Debug\hardware_prediction_expert_system.FormDescription.resources
-C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\obj\Debug\hardware_prediction_expert_system.FormRules.resources
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\obj\Debug\hardware_prediction_expert_system.Properties.Resources.resources
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\obj\Debug\hardware_prediction_expert_system.csproj.GenerateResource.cache
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\obj\Debug\hardware_prediction_expert_system.csproj.CoreCompileInputs.cache
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\obj\Debug\hardware_prediction_expert_system.csproj.CopyComplete
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\obj\Debug\hardware_prediction_expert_system.exe
 C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\obj\Debug\hardware_prediction_expert_system.pdb
-C:\Users\THIEN LY\Desktop\New folder\ProjectY\forward-chaining-hardware-error-prediction\obj\Debug\hardware_prediction_expert_system.CustomMessagebox.resources

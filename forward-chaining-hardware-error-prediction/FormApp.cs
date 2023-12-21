@@ -12,6 +12,8 @@ namespace hardware_prediction_expert_system
 
         private void HPES_Load(object sender, EventArgs e)
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
+
             // Chọn TabPage1 là mặc định
             FormDescription fd = new FormDescription();
             fd.TopLevel = false;
